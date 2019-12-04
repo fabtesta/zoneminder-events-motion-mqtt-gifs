@@ -1,0 +1,26 @@
+{
+  "mqtt_server": "your-broker.com",
+  "mqtt_port": 1883,
+  "mqtt_user": "user",
+  "mqtt_pwd": "password",
+  "mqtt_base_gifs_topic": "zoneminder/cameras/gifs",
+  "mqtt_base_events_topic": "zoneminder/cameras/events",
+  "ffmpeg_working_folder": "./gifs",
+  "zoneminder_events_video_folder": "./events",
+  "zoneminder_cameras": [
+    {
+      "id": "camera_1",
+      "skip_first_n_secs": 0,
+      "max_length_secs": 5,
+      "scale": 320,
+      "event_video_prefix": "camera_1-event-"
+    },
+    {
+      "id": "camera_2",
+      "skip_first_n_secs": 0,
+      "max_length_secs": 5,
+      "scale": 320,
+      "event_video_prefix": "camera_2-event-"
+    }
+  ]
+}
